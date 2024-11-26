@@ -17,6 +17,7 @@ function Dashboard() {
         async function getAllExam() {
             let value = await axios.get(`${baseUrl}/exam`);
             setExam("We have total " + value.data.length + " exam");
+            console.log(getAllExam);
         }
         getAllExam();
 
