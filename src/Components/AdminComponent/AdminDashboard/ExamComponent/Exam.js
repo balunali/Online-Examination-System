@@ -34,6 +34,7 @@ function Exam() {
             let value = await axios.get(`${baseUrl}/exam`);
             setExams(value.data);
             //console.log(value.data[0].name);
+            console.log(getAllExam);
         }
         getAllExam();
     }, []);
